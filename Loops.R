@@ -17,8 +17,6 @@ while (var <= 10){
 }
   
 #for loops
-library(stringi)
-library(stringr)
 
 let = LETTERS[1:10]
 for (i in let){
