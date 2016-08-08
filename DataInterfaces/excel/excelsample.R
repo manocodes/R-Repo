@@ -17,3 +17,8 @@ file="output.xlsx"
 
 write.xlsx(merged.emp, file, sheetName="Sheet1", 
            col.names=TRUE, row.names=TRUE, append=FALSE)
+write.xlsx(merged.emp, file, sheetName="MTCARS", 
+           append=TRUE)
+
+"http://www.sthda.com/english/wiki/r-xlsx-package-a-quick-start-guide-to-manipulate-excel-files-in-r"
+#see how you can start adding row by row - good job man..
