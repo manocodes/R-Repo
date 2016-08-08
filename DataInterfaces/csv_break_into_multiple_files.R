@@ -26,6 +26,4 @@ if (is.data.frame(data)){
   tabdata = table(deps)
   write.csv(tabdata, "_SUMMERY_OF_ALL_DEPARTMENTS_EMPLOYEES.csv")
   
-  pie(tabdata)
-  
 }
