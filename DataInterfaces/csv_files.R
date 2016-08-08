@@ -31,17 +31,13 @@ if (is.data.frame(data)){
   deps = factor(data$Department)
   #print(deps)
   
-  #print(table(deps))
+  tabdata = table(deps)
+  
   
   test = as.character(levels(deps))
   
-  for (i in test){
-    name = paste(as.character(i), ".csv",sep="")
-    #print(name)
-    police = subset(data,Department==i)
-    #print(police)
-    write.csv(police, name)
-  }
+  
+  write.csv(tabdata, "temp.csv")
 }
 
 

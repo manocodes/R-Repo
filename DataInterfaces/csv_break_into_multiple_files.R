@@ -18,9 +18,14 @@ if (is.data.frame(data)){
   for (i in test)
     {
     name = paste(as.character(i), ".csv",sep="")
-    police = subset(data,Department==i)
-    write.csv(police, name)
+    deptData = subset(data,Department==i)
+    write.csv(deptData, name)
   }
+  
+  #this creates a summery .csv file as well.
+  tabdata = table(deps)
+  write.csv(tabdata, "_SUMMERY_OF_ALL_DEPARTMENTS_EMPLOYEES.csv")
+  
+  pie(tabdata)
+  
 }
-
-
